@@ -25,7 +25,7 @@ grad = zeros(size(theta));
 pred = sigmoid(X*theta);
 error = -y.*log(pred)-(1-y).*log(1-pred);
 J = (1/m)*sum(error);
-grad = (1/m)*sum((pred-y).*X,1)';
+grad = (1/m)*sum((pred-y).*X);
 
 
 % =============================================================

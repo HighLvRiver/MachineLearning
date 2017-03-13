@@ -18,13 +18,11 @@ for iter = 1:num_iters
     %
 
 
-
-
-
-
-
-
-
+    pred = X * theta;
+    errors = pred - y; % m by 1 vector
+    % sum_delta = (alpha / m) * sum(errors .* X, 1); % sum by column, which is 1 by n + 1 matrix
+    sum_delta = (alpha / m) .* (X' * errors);
+    theta = theta - sum_delta;
 
 
     % ============================================================
