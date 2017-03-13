@@ -6,4 +6,4 @@ Machine Learning Study Note
     	Taught by 	: Andrew Ng
     	Start Date 	: 02/20/2017 
     	End   Date 	: 
-    	Learning Tool 	: Octav
+    	Learning Tool	: Octav
