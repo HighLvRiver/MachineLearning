@@ -1,0 +1,9 @@
+
+with open("/Users/jayden.yoo/Downloads/mnist_train.csv","r") as csvfile:
+    train_data_raw = pd.read_csv(csvfile, header=None)    
+
+with open("/Users/jayden.yoo/Downloads/mnist_test.csv","r") as csvfile:
+    test_data_raw = pd.read_csv(csvfile, header=None)
+    
+test_sample = 10
+train_sample = 1000
