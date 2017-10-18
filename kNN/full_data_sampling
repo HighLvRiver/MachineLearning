@@ -7,3 +7,8 @@ with open("/Users/jayden.yoo/Downloads/mnist_test.csv","r") as csvfile:
     
 test_sample = 10
 train_sample = 1000
+
+test_labels = test_data_raw.iloc[:test_sample,0]
+test_data = test_data_raw.iloc[:test_sample,1:]
+train_labels = train_data_raw.iloc[:train_sample,0]
+train_data = train_data_raw.iloc[:train_sample,1:]
